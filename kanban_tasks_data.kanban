@@ -21,21 +21,23 @@
 			"uuid": "83929335-47a1-40b8-a9cb-d034ab80ea86",
 			"title": "Todo",
 			"tasks": [
-				"d8eefaad-bbfd-4a66-a11d-107aa693a3c4",
-				"e2cf69ac-c96d-46f8-9be5-be3c5e9d67e5"
+				"e2cf69ac-c96d-46f8-9be5-be3c5e9d67e5",
+				"96502c33-ea4e-47b2-9212-7ff52e2944ee"
 			]
 		},
 		{
 			"uuid": "c8ef0915-fedf-4a40-8ffe-d61c6f673ac5",
 			"title": "Doing",
 			"tasks": [
-				"440168aa-7f5f-456e-b58e-2ab306447618"
+				"d8eefaad-bbfd-4a66-a11d-107aa693a3c4"
 			]
 		},
 		{
 			"uuid": "31f6ddc3-9021-44de-ae34-10d7c45f9509",
 			"title": "Done",
-			"tasks": []
+			"tasks": [
+				"440168aa-7f5f-456e-b58e-2ab306447618"
+			]
 		}
 	],
 	"tasks": [
@@ -58,6 +60,20 @@
 			"title": "Add testing addons (GUT, LimboConsole)",
 			"description": "",
 			"category": "188c56b6-2ee7-4c3f-81ca-476ce118f754",
+			"steps": []
+		},
+		{
+			"uuid": "a28788b5-a505-4bbe-a7fe-cc461b4f3b24",
+			"title": "Get them to reveal aviation secrets",
+			"description": "",
+			"category": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
+			"steps": []
+		},
+		{
+			"uuid": "96502c33-ea4e-47b2-9212-7ff52e2944ee",
+			"title": "Implement realistic BVR combat",
+			"description": "",
+			"category": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
 			"steps": []
 		}
 	],
