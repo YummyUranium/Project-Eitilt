@@ -1,0 +1,77 @@
+{
+	"categories": [
+		{
+			"uuid": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
+			"title": "Task",
+			"color": "569eff"
+		},
+		{
+			"uuid": "210a0d67-11d2-4086-ba26-fd4fa5b9c36f",
+			"title": "Goal",
+			"color": "e8ca11"
+		},
+		{
+			"uuid": "188c56b6-2ee7-4c3f-81ca-476ce118f754",
+			"title": "Eventual Task",
+			"color": "2001b8"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "83929335-47a1-40b8-a9cb-d034ab80ea86",
+			"title": "Todo",
+			"tasks": [
+				"d8eefaad-bbfd-4a66-a11d-107aa693a3c4",
+				"e2cf69ac-c96d-46f8-9be5-be3c5e9d67e5"
+			]
+		},
+		{
+			"uuid": "c8ef0915-fedf-4a40-8ffe-d61c6f673ac5",
+			"title": "Doing",
+			"tasks": [
+				"440168aa-7f5f-456e-b58e-2ab306447618"
+			]
+		},
+		{
+			"uuid": "31f6ddc3-9021-44de-ae34-10d7c45f9509",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "440168aa-7f5f-456e-b58e-2ab306447618",
+			"title": "Import addons",
+			"description": "",
+			"category": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
+			"steps": []
+		},
+		{
+			"uuid": "d8eefaad-bbfd-4a66-a11d-107aa693a3c4",
+			"title": "Create test environment",
+			"description": "",
+			"category": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
+			"steps": []
+		},
+		{
+			"uuid": "e2cf69ac-c96d-46f8-9be5-be3c5e9d67e5",
+			"title": "Add testing addons (GUT, LimboConsole)",
+			"description": "",
+			"category": "188c56b6-2ee7-4c3f-81ca-476ce118f754",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"83929335-47a1-40b8-a9cb-d034ab80ea86"
+			],
+			[
+				"c8ef0915-fedf-4a40-8ffe-d61c6f673ac5"
+			],
+			[
+				"31f6ddc3-9021-44de-ae34-10d7c45f9509"
+			]
+		]
+	}
+}
