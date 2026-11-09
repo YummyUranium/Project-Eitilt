@@ -1,5 +1,13 @@
 [gd_scene format=3 uid="uid://dwgxurrxo88pn"]
 
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_feb5d"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="2_fc0e3"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="3_7jktm"]
+[ext_resource type="PackedScene" uid="uid://d2b78foyxuci3" path="res://airplanes/light_plane.tscn" id="4_fc0e3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sg84c"]
+albedo_color = Color(0.0014929798, 0.52214175, 5.7756904e-07, 1)
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mwb40"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,11 +23,37 @@ glow_enabled = true
 fog_enabled = true
 fog_sky_affect = 0.1
 
+[sub_resource type="Resource" id="Resource_ryrav"]
+script = ExtResource("3_7jktm")
+
 [node name="Root" type="Node3D" unique_id=328636836]
+
+[node name="Ground" type="CSGBox3D" parent="." unique_id=199846600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+use_collision = true
+size = Vector3(32, 2, 32)
+material = SubResource("StandardMaterial3D_sg84c")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1574809053]
 environment = SubResource("Environment_e2o6t")
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=1061867982]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 7.2457347, 0)
 shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2088653371]
+transform = Transform3D(1, 0, 0, 0, 0.9447736, 0.32772365, 0, -0.32772365, 0.9447736, 0, 5.359271, 5.899802)
+top_level = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1860312648]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("1_feb5d")
+
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1507773865]
+transform = Transform3D(1, 0, 0, 0, 0.9447736, 0.32772365, 0, -0.32772365, 0.9447736, 0, 5.359271, 5.899802)
+script = ExtResource("2_fc0e3")
+tween_resource = SubResource("Resource_ryrav")
+
+[node name="LightPlaneRoot" parent="." unique_id=1510438667 instance=ExtResource("4_fc0e3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.89729977, 0)

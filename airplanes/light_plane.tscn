@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d2b78foyxuci3"]
+
+[ext_resource type="PackedScene" uid="uid://cywhlh4uiya7y" path="res://airplanes/LightPlane.glb" id="1_q37jv"]
+
+[node name="LightPlaneRoot" type="Node3D" unique_id=1510438667]
+
+[node name="LightPlane2" parent="." unique_id=1515538848 instance=ExtResource("1_q37jv")]
