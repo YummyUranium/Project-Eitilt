@@ -4,4 +4,4 @@
 
 [node name="LightPlaneRoot" type="Node3D" unique_id=1510438667]
 
-[node name="LightPlane2" parent="." unique_id=1515538848 instance=ExtResource("1_q37jv")]
+[node name="LightPlane2" parent="." unique_id=1174045962 instance=ExtResource("1_q37jv")]
