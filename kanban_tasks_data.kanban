@@ -21,15 +21,15 @@
 			"uuid": "83929335-47a1-40b8-a9cb-d034ab80ea86",
 			"title": "Todo",
 			"tasks": [
-				"e2cf69ac-c96d-46f8-9be5-be3c5e9d67e5",
-				"96502c33-ea4e-47b2-9212-7ff52e2944ee"
+				"e2cf69ac-c96d-46f8-9be5-be3c5e9d67e5"
 			]
 		},
 		{
 			"uuid": "c8ef0915-fedf-4a40-8ffe-d61c6f673ac5",
 			"title": "Doing",
 			"tasks": [
-				"d8eefaad-bbfd-4a66-a11d-107aa693a3c4"
+				"d8eefaad-bbfd-4a66-a11d-107aa693a3c4",
+				"619a9443-b211-4390-ad9b-83a8cef43e2e"
 			]
 		},
 		{
@@ -72,6 +72,13 @@
 		{
 			"uuid": "96502c33-ea4e-47b2-9212-7ff52e2944ee",
 			"title": "Implement realistic BVR combat",
+			"description": "",
+			"category": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
+			"steps": []
+		},
+		{
+			"uuid": "619a9443-b211-4390-ad9b-83a8cef43e2e",
+			"title": "Adding movement",
 			"description": "",
 			"category": "38133db2-5c38-4d0d-b870-9a65ad0d1038",
 			"steps": []
