@@ -25,7 +25,7 @@ fog_sky_affect = 0.1
 [node name="Ground" type="CSGBox3D" parent="." unique_id=199846600]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 use_collision = true
-size = Vector3(32, 2, 32)
+size = Vector3(1032.3357, 2, 1037.6396)
 material = SubResource("StandardMaterial3D_sg84c")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1574809053]
@@ -38,3 +38,19 @@ shadow_enabled = true
 [node name="Plane" parent="." unique_id=908433861 instance=ExtResource("4_fc0e3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049562216, 0.02313915, -0.034413338)
 yaw_rate = 2.0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1103995276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.181898, 27.147148)
+size = Vector3(6.4143066, 8.211914, 6.803711)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=105418963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.155775, 4.181898, -3.1609087)
+size = Vector3(6.4143066, 8.211914, 9.183228)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1860958906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.755451, 4.181898, 13.412663)
+size = Vector3(6.4143066, 8.211914, 9.183228)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1472530442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.405529, 4.181898, -51.48601)
+size = Vector3(41.228516, 8.211914, 9.183228)
